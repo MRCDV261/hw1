@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #1a1a1a;
+}
+
+.pagina-carrello {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.intestazione-carrello {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.intestazione-carrello h1 {
+    font-size: 1.5rem;
+}
+
+.conteggio-articoli {
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+
+.contenitore-carrello {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.area-messaggio {
+    flex: 1;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #333;
+    padding-top: 50px;
+    display: none;
+}
+
+
+.area-messaggio.visibile{
+    display: block;
+}
+
+
+
+.riepilogo-ordine {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 300px;
+    min-width: 280px;
+    background-color: #fafafa;
+}
+
+.riepilogo-ordine h2 {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.riga-riepilogo {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+}
+
+.reso {
+    margin-top: 20px;
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.riga-totale {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.pulsante-acquisto-disabilitato {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.pulsante-acquisto-disabilitato button {
+    padding: 15px 40px;
+    font-size: 1rem;
+    border-radius: 999px;
+    background-color: #e6e6e6;
+    border: none;
+    color: #333;
+}
+
+.lista-prodotti {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.prodotto-carrello {
+    display: flex;
+    gap: 20px;
+    background-color: #fdfdfd;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px ;
+}
+
+
+.prodotto-carrello img {
+    width: 100px;
+    height: auto;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.dettagli-prodotto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.dettagli-prodotto h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #222;
+}
+
+.dettagli-prodotto p {
+    margin: 2px 0;
+    font-size: 0.95rem;
+    color: #444;
+}
+
+.remove-item-btn:hover {
+  background-color: gray;
+}
+
+.remove-item-btn{
+  background-color: black;
+  color: white; 
+  padding: 10px 20px;
+  margin-top: 40px; 
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
