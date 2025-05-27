@@ -1,7 +1,7 @@
 <?php
 
     $query = urlencode($_GET['q']);
-    $apiKey = '5753615843e5ad725140440467f3999d';  
+    $apiKey = 'secret';  
     $url = "https://gnews.io/api/v4/search?q=$query&lang=it&apikey=$apiKey";
 
     $ch = curl_init(); 
